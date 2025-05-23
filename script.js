@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let money = 464000000000;
     let purchases = {};
     let totalSpent = 0;
-
+    
     const items = [
         { name: "Coca-Cola Pack", price: 3 },
         { name: "Big Mac", price: 5 },
@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!itemsContainer) return;
 
     items.forEach((item, index) => {
+
         let itemDiv = document.createElement("div");
         itemDiv.className = "item";
         itemDiv.id = `item-${index}`; // Add unique ID for each item
